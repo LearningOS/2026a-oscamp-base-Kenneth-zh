@@ -15,10 +15,18 @@ use std::thread;
 /// The main thread receives all messages and returns them.
 pub fn simple_send_recv(items: Vec<String>) -> Vec<String> {
     // TODO: Create channel
+    let (sx, rx) = mpsc::channel();
     // TODO: Spawn thread to send each element in items
+    thread::spawn(move || {
+        for item in items {
+            let _ = sx.send(item);
+        }
+    });
     // TODO: In main thread, receive all messages and collect into Vec
     // Hint: When all Senders are dropped, recv() returns Err
-    todo!()
+
+    let result = rx.iter().collect();
+    result
 }
 
 /// Create `n_producers` producer threads, each sending a message in format `"msg from {id}"`.
@@ -27,10 +35,19 @@ pub fn simple_send_recv(items: Vec<String>) -> Vec<String> {
 /// Hint: Use `tx.clone()` to create multiple senders. Note that the original tx must also be dropped.
 pub fn multi_producer(n_producers: usize) -> Vec<String> {
     // TODO: Create channel
+    let (sx, rx) = mpsc::channel();
     // TODO: Clone a sender for each producer
+
+    for id in 0..n_producers {
+        let sx = sx.clone();
+        let _ = sx.send(format!("msg from {id}"));
+    }
     // TODO: Remember to drop the original sender, otherwise receiver won't finish
+    drop(sx);
     // TODO: Collect all messages and sort
-    todo!()
+    let mut result: Vec<String> = rx.iter().collect();
+    result.sort();
+    result
 }
 
 #[cfg(test)]
