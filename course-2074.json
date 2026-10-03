@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Kenneth-zh",
-  "commit": "dafc13969da3bc3bcc7938a85213b6e80e892d46",
-  "score": 15,
+  "commit": "badb8adadf47a0153c744a4dc5f780bad5e2773d",
+  "score": 24,
   "totalScore": 100,
   "exercises": [
     {
@@ -37,16 +37,16 @@
     {
       "name": "mem_primitives",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "bump_allocator",
       "max": 5,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 5,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "free_list_allocator",
@@ -176,9 +176,9 @@
     }
   ],
   "student": "Kenneth-zh",
-  "runId": "37115936093",
+  "runId": "37133383973",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
