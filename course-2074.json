@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Kenneth-zh",
-  "commit": "9c378ce25fd5b1b6882dd04c773f68202dcd54da",
-  "score": 59,
+  "commit": "6bfbc20cb781e2e2d5488473227c7b4d344f4341",
+  "score": 70,
   "totalScore": 100,
   "exercises": [
     {
@@ -100,16 +100,16 @@
     {
       "name": "rwlock",
       "max": 5,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 5,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "stack_coroutine",
       "max": 6,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 6,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "green_threads",
@@ -176,9 +176,9 @@
     }
   ],
   "student": "Kenneth-zh",
-  "runId": "37600772190",
+  "runId": "37908066739",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
