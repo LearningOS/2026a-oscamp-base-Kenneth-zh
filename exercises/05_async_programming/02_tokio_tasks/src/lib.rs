@@ -49,9 +49,9 @@ pub async fn parallel_sleep_tasks(n: usize, duration_ms: u64) -> Vec<usize> {
         }));
     }
 
-    let results = Vec::new();
+    let mut results = Vec::new();
     for handle in handles {
-        handle.await.unwrap();
+        results.push(handle.await.unwrap());
     }
 
     results
