@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Kenneth-zh",
-  "commit": "41e373a9432406e569f70172aa27c66e4e01c82e",
-  "score": 89,
+  "commit": "9f1e7543992e0715207455f13538543082d9b76e",
+  "score": 97,
   "totalScore": 100,
   "exercises": [
     {
@@ -156,16 +156,16 @@
     {
       "name": "page_table_walk",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "multi_level_pt",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "tlb_sim",
@@ -176,9 +176,9 @@
     }
   ],
   "student": "Kenneth-zh",
-  "runId": "44362973289",
+  "runId": "44920864431",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
